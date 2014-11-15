@@ -26,14 +26,18 @@
                           </block>
                         </value>
                         <next>
-                          <block type="robot_delay" id="59" inline="true">
-                            <value name="DELAY">
-                              <block type="sensor_spectrometer" id="66">
-                                <field name="LIGHT">BLUE</field>
-                              </block>
-                            </value>
+                          <block type="oled_cleardisplay" id="108">
                             <next>
-                              <block type="movement_stop" id="76"></block>
+                              <block type="oled_drawnumber" id="190" inline="true">
+                                <value name="NUMBER">
+                                  <block type="sensor_spectrometer" id="83">
+                                    <field name="LIGHT">RED</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="movement_stop" id="76"></block>
+                                </next>
+                              </block>
                             </next>
                           </block>
                         </next>
