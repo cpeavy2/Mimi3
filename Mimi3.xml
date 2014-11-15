@@ -31,11 +31,20 @@
                               <block type="oled_drawnumber" id="190" inline="true">
                                 <value name="NUMBER">
                                   <block type="sensor_spectrometer" id="83">
-                                    <field name="LIGHT">RED</field>
+                                    <field name="LIGHT">BLUE</field>
                                   </block>
                                 </value>
                                 <next>
-                                  <block type="movement_stop" id="76"></block>
+                                  <block type="oled_drawnumber" id="215" inline="true">
+                                    <value name="NUMBER">
+                                      <block type="sensor_spectrometer" id="206">
+                                        <field name="LIGHT">GREEN</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="movement_stop" id="76"></block>
+                                    </next>
+                                  </block>
                                 </next>
                               </block>
                             </next>
