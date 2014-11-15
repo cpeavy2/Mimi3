@@ -1,0 +1,10 @@
+{
+    "name": "Mimi3",
+    "version": "1.0.0",
+    "manifest_version": 1,
+    "project_type": "application",
+    "executable_type": "scratch",
+    "executable": "Mimi3.xml",
+    "author": "cpeavy2",
+    "minimum_firmware_version": 42
+}
