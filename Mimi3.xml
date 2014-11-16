@@ -77,7 +77,11 @@
                                                                   </block>
                                                                 </value>
                                                                 <next>
-                                                                  <block type="movement_stop" id="19"></block>
+                                                                  <block type="oled_cleardisplay" id="230">
+                                                                    <next>
+                                                                      <block type="movement_stop" id="19"></block>
+                                                                    </next>
+                                                                  </block>
                                                                 </next>
                                                               </block>
                                                             </next>
