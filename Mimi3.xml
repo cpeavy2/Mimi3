@@ -48,29 +48,29 @@
                                             <next>
                                               <block type="oled_drawnumber" id="17" inline="true">
                                                 <value name="NUMBER">
-                                                  <block type="sensor_spectrometer" id="18">
-                                                    <field name="LIGHT">BLUE</field>
+                                                  <block type="math_number" id="198">
+                                                    <field name="NUM">1</field>
                                                   </block>
                                                 </value>
                                                 <next>
                                                   <block type="oled_drawnumber" id="158" inline="true">
                                                     <value name="NUMBER">
-                                                      <block type="sensor_spectrometer" id="159">
-                                                        <field name="LIGHT">GREEN</field>
+                                                      <block type="math_number" id="199">
+                                                        <field name="NUM">2</field>
                                                       </block>
                                                     </value>
                                                     <next>
                                                       <block type="oled_drawnumber" id="156" inline="true">
                                                         <value name="NUMBER">
-                                                          <block type="sensor_spectrometer" id="157">
-                                                            <field name="LIGHT">YELLOW</field>
+                                                          <block type="math_number" id="200">
+                                                            <field name="NUM">3</field>
                                                           </block>
                                                         </value>
                                                         <next>
                                                           <block type="oled_drawnumber" id="160" inline="true">
                                                             <value name="NUMBER">
-                                                              <block type="sensor_spectrometer" id="161">
-                                                                <field name="LIGHT">RED</field>
+                                                              <block type="math_number" id="201">
+                                                                <field name="NUM">4</field>
                                                               </block>
                                                             </value>
                                                             <next>
