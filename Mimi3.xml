@@ -35,18 +35,14 @@
                                   </block>
                                 </value>
                                 <next>
-                                  <block type="oled_cleardisplay" id="10">
-                                    <next>
-                                      <block type="oled_drawnumber" id="17" inline="true">
-                                        <value name="NUMBER">
-                                          <block type="sensor_spectrometer" id="18">
-                                            <field name="LIGHT">BLUE</field>
-                                          </block>
-                                        </value>
-                                        <next>
-                                          <block type="movement_stop" id="19"></block>
-                                        </next>
+                                  <block type="oled_drawnumber" id="17" inline="true">
+                                    <value name="NUMBER">
+                                      <block type="sensor_spectrometer" id="18">
+                                        <field name="LIGHT">BLUE</field>
                                       </block>
+                                    </value>
+                                    <next>
+                                      <block type="movement_stop" id="19"></block>
                                     </next>
                                   </block>
                                 </next>
