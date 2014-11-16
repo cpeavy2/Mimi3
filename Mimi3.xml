@@ -13,38 +13,51 @@
               <block type="robot_delay" id="5" inline="true">
                 <value name="DELAY">
                   <block type="math_number" id="6">
-                    <field name="NUM">2000</field>
+                    <field name="NUM">1500</field>
                   </block>
                 </value>
                 <next>
-                  <block type="movement_left" id="29">
+                  <block type="movement_forward" id="131">
                     <next>
-                      <block type="robot_delay" id="8" inline="true">
+                      <block type="robot_delay" id="139" inline="true">
                         <value name="DELAY">
-                          <block type="math_number" id="9">
-                            <field name="NUM">2000</field>
+                          <block type="math_number" id="146">
+                            <field name="NUM">1000</field>
                           </block>
                         </value>
                         <next>
-                          <block type="movement_forward" id="39">
+                          <block type="movement_left" id="29">
                             <next>
-                              <block type="robot_delay" id="41" inline="true">
+                              <block type="robot_delay" id="8" inline="true">
                                 <value name="DELAY">
-                                  <block type="math_number" id="48">
-                                    <field name="NUM">2000</field>
+                                  <block type="math_number" id="9">
+                                    <field name="NUM">1500</field>
                                   </block>
                                 </value>
                                 <next>
-                                  <block type="oled_drawnumber" id="17" inline="true">
-                                    <value name="NUMBER">
-                                      <block type="sensor_spectrometer" id="18">
-                                        <field name="LIGHT">BLUE</field>
-                                      </block>
-                                    </value>
+                                  <block type="movement_forward" id="39">
                                     <next>
-                                      <block type="movement_stop" id="19">
+                                      <block type="robot_delay" id="41" inline="true">
+                                        <value name="DELAY">
+                                          <block type="math_number" id="48">
+                                            <field name="NUM">2000</field>
+                                          </block>
+                                        </value>
                                         <next>
-                                          <block type="oled_cleardisplay" id="121"></block>
+                                          <block type="oled_drawnumber" id="17" inline="true">
+                                            <value name="NUMBER">
+                                              <block type="sensor_spectrometer" id="18">
+                                                <field name="LIGHT">BLUE</field>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block type="movement_stop" id="19">
+                                                <next>
+                                                  <block type="oled_cleardisplay" id="121"></block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
                                         </next>
                                       </block>
                                     </next>
