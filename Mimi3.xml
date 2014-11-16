@@ -47,7 +47,7 @@
                                           <block type="oled_drawnumber" id="17" inline="true">
                                             <value name="NUMBER">
                                               <block type="sensor_spectrometer" id="18">
-                                                <field name="LIGHT">IR940</field>
+                                                <field name="LIGHT">BLUE</field>
                                               </block>
                                             </value>
                                             <next>
