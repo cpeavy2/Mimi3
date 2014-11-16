@@ -44,39 +44,35 @@
                                           </block>
                                         </value>
                                         <next>
-                                          <block type="oled_cleardisplay" id="174">
+                                          <block type="oled_drawnumber" id="17" inline="true">
+                                            <value name="NUMBER">
+                                              <block type="math_number" id="198">
+                                                <field name="NUM">1</field>
+                                              </block>
+                                            </value>
                                             <next>
-                                              <block type="oled_drawnumber" id="17" inline="true">
+                                              <block type="oled_drawnumber" id="158" inline="true">
                                                 <value name="NUMBER">
-                                                  <block type="math_number" id="198">
-                                                    <field name="NUM">1</field>
+                                                  <block type="math_number" id="199">
+                                                    <field name="NUM">2</field>
                                                   </block>
                                                 </value>
                                                 <next>
-                                                  <block type="oled_drawnumber" id="158" inline="true">
+                                                  <block type="oled_drawnumber" id="156" inline="true">
                                                     <value name="NUMBER">
-                                                      <block type="math_number" id="199">
-                                                        <field name="NUM">2</field>
+                                                      <block type="math_number" id="200">
+                                                        <field name="NUM">3</field>
                                                       </block>
                                                     </value>
                                                     <next>
-                                                      <block type="oled_drawnumber" id="156" inline="true">
+                                                      <block type="oled_drawnumber" id="160" inline="true">
                                                         <value name="NUMBER">
-                                                          <block type="math_number" id="200">
-                                                            <field name="NUM">3</field>
+                                                          <block type="math_number" id="201">
+                                                            <field name="NUM">4</field>
                                                           </block>
                                                         </value>
                                                         <next>
-                                                          <block type="oled_drawnumber" id="160" inline="true">
-                                                            <value name="NUMBER">
-                                                              <block type="math_number" id="201">
-                                                                <field name="NUM">4</field>
-                                                              </block>
-                                                            </value>
-                                                            <next>
-                                                              <block type="movement_stop" id="19"></block>
-                                                            </next>
-                                                          </block>
+                                                          <block type="movement_stop" id="19"></block>
                                                         </next>
                                                       </block>
                                                     </next>
