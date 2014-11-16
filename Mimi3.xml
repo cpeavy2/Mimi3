@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_forward" id="1" x="117" y="23">
+  <block type="movement_forward" id="1" x="95" y="13">
     <next>
       <block type="robot_delay" id="2" inline="true">
         <value name="DELAY">
@@ -13,7 +13,7 @@
               <block type="robot_delay" id="5" inline="true">
                 <value name="DELAY">
                   <block type="math_number" id="6">
-                    <field name="NUM">1500</field>
+                    <field name="NUM">1200</field>
                   </block>
                 </value>
                 <next>
@@ -31,7 +31,7 @@
                               <block type="robot_delay" id="8" inline="true">
                                 <value name="DELAY">
                                   <block type="math_number" id="9">
-                                    <field name="NUM">1500</field>
+                                    <field name="NUM">1200</field>
                                   </block>
                                 </value>
                                 <next>
@@ -51,7 +51,52 @@
                                               </block>
                                             </value>
                                             <next>
-                                              <block type="movement_stop" id="19"></block>
+                                              <block type="oled_drawnumber" id="158" inline="true">
+                                                <value name="NUMBER">
+                                                  <block type="sensor_spectrometer" id="159">
+                                                    <field name="LIGHT">GREEN</field>
+                                                  </block>
+                                                </value>
+                                                <next>
+                                                  <block type="oled_drawnumber" id="156" inline="true">
+                                                    <value name="NUMBER">
+                                                      <block type="sensor_spectrometer" id="157">
+                                                        <field name="LIGHT">YELLOW</field>
+                                                      </block>
+                                                    </value>
+                                                    <next>
+                                                      <block type="oled_drawnumber" id="160" inline="true">
+                                                        <value name="NUMBER">
+                                                          <block type="sensor_spectrometer" id="161">
+                                                            <field name="LIGHT">RED</field>
+                                                          </block>
+                                                        </value>
+                                                        <next>
+                                                          <block type="oled_drawnumber" id="164" inline="true">
+                                                            <value name="NUMBER">
+                                                              <block type="sensor_spectrometer" id="165">
+                                                                <field name="LIGHT">IR880</field>
+                                                              </block>
+                                                            </value>
+                                                            <next>
+                                                              <block type="oled_drawnumber" id="162" inline="true">
+                                                                <value name="NUMBER">
+                                                                  <block type="sensor_spectrometer" id="163">
+                                                                    <field name="LIGHT">IR940</field>
+                                                                  </block>
+                                                                </value>
+                                                                <next>
+                                                                  <block type="movement_stop" id="19"></block>
+                                                                </next>
+                                                              </block>
+                                                            </next>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
                                             </next>
                                           </block>
                                         </next>
