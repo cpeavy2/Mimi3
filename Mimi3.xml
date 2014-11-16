@@ -1,10 +1,10 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_forward" id="1" x="118" y="56">
+  <block type="movement_forward" id="1" x="117" y="23">
     <next>
       <block type="robot_delay" id="2" inline="true">
         <value name="DELAY">
           <block type="math_number" id="3">
-            <field name="NUM">1000</field>
+            <field name="NUM">2000</field>
           </block>
         </value>
         <next>
@@ -17,48 +17,34 @@
                   </block>
                 </value>
                 <next>
-                  <block type="movement_reverse" id="7">
+                  <block type="movement_left" id="29">
                     <next>
                       <block type="robot_delay" id="8" inline="true">
                         <value name="DELAY">
                           <block type="math_number" id="9">
-                            <field name="NUM">1000</field>
+                            <field name="NUM">2000</field>
                           </block>
                         </value>
                         <next>
-                          <block type="oled_cleardisplay" id="10">
+                          <block type="movement_forward" id="39">
                             <next>
-                              <block type="oled_drawnumber" id="11" inline="true">
-                                <value name="NUMBER">
-                                  <block type="sensor_spectrometer" id="12">
-                                    <field name="LIGHT">BLUE</field>
+                              <block type="robot_delay" id="41" inline="true">
+                                <value name="DELAY">
+                                  <block type="math_number" id="48">
+                                    <field name="NUM">2000</field>
                                   </block>
                                 </value>
                                 <next>
-                                  <block type="oled_drawnumber" id="13" inline="true">
-                                    <value name="NUMBER">
-                                      <block type="sensor_spectrometer" id="14">
-                                        <field name="LIGHT">GREEN</field>
-                                      </block>
-                                    </value>
+                                  <block type="oled_cleardisplay" id="10">
                                     <next>
-                                      <block type="oled_drawnumber" id="15" inline="true">
+                                      <block type="oled_drawnumber" id="17" inline="true">
                                         <value name="NUMBER">
-                                          <block type="sensor_spectrometer" id="16">
-                                            <field name="LIGHT">YELLOW</field>
+                                          <block type="sensor_spectrometer" id="18">
+                                            <field name="LIGHT">RED</field>
                                           </block>
                                         </value>
                                         <next>
-                                          <block type="oled_drawnumber" id="17" inline="true">
-                                            <value name="NUMBER">
-                                              <block type="sensor_spectrometer" id="18">
-                                                <field name="LIGHT">RED</field>
-                                              </block>
-                                            </value>
-                                            <next>
-                                              <block type="movement_stop" id="19"></block>
-                                            </next>
-                                          </block>
+                                          <block type="movement_stop" id="19"></block>
                                         </next>
                                       </block>
                                     </next>
