@@ -47,7 +47,7 @@
                                           <block type="oled_cleardisplay" id="220">
                                             <next>
                                               <block type="oled_linerect" id="229">
-                                                <field name="OBJECT">RECT</field>
+                                                <field name="OBJECT">LINE</field>
                                                 <next>
                                                   <block type="oled_drawnumber" id="17" inline="true">
                                                     <value name="NUMBER">
@@ -77,11 +77,7 @@
                                                                   </block>
                                                                 </value>
                                                                 <next>
-                                                                  <block type="oled_cleardisplay" id="230">
-                                                                    <next>
-                                                                      <block type="movement_stop" id="19"></block>
-                                                                    </next>
-                                                                  </block>
+                                                                  <block type="movement_stop" id="19"></block>
                                                                 </next>
                                                               </block>
                                                             </next>
